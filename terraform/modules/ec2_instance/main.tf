@@ -7,7 +7,7 @@ resource "aws_instance" "jenkins" {
   key_name               = var.ssh_key_name
 
   tags = {
-    Name = "Public-Instance"
+    Name = "jenkins"
   }
 }
 
@@ -20,7 +20,7 @@ resource "aws_instance" "sonarqube" {
   key_name               = var.ssh_key_name
 
   tags = {
-    Name = "Public-Instance"
+    Name = "sonarqube"
   }
 }
 
@@ -34,6 +34,6 @@ resource "aws_instance" "docker-server" {
 
 
   tags = {
-    Name = "Public-Instance"
+    Name = "docker-server"
   }
 }
