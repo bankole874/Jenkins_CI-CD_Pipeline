@@ -8,7 +8,7 @@ variable "public_security_group_id" {
   type        = string
 }
 
-variable "ssh_key_name" {
-  description = "The name of the SSH key pair"
-  type        = string
-}
+# variable "ssh_key_name" {
+#   description = "The name of the SSH key pair"
+#   type        = string
+# }
