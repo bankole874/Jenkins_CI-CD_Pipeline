@@ -10,3 +10,8 @@ Throughout the video, we will explain the importance of each step and provide de
 Whether you are a developer, software engineer, or DevOps professional, this video will provide you with valuable insights on how to set up a CI/CD pipeline using Jenkins, Github, Sonarqube, and Docker on an AWS EC2 instance. Join us in this exciting journey and learn how to streamline your software development process today!
 
 Make sure to subscribe to our channel if this video helped you and you want to see more content like this. Don't forget to give this video a thumbs up if you found it helpful and hit the notification bell icon so you don't miss any updates from our channel. Thank you for watching!
+
+![deployed_instances](https://github.com/user-attachments/assets/56dec704-8a07-4b35-9710-039322d850ef)
+![public_instances_with_terraform](https://github.com/user-attachments/assets/062efa21-8814-4f53-954d-a78bc5b15023)
+![website_preview](https://github.com/user-attachments/assets/f1a3b9b9-f1ff-4d68-82b2-59941c538a7c)
+![ssh_docker_jenkins_and_sonarqube](https://github.com/user-attachments/assets/f3d5ef81-3a0b-48af-83b1-4bf9ee24c19f)
