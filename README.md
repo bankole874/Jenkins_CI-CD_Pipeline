@@ -61,7 +61,7 @@ Integrate SonarQube with Jenkins by configuring the Jenkins job to perform a Son
 - Deploy the Docker Container: Run the Docker container on the third EC2 instance.
 
 #### Build and Deployment Successful
-![image](https://github.com/user-attachments/assets/441ea664-bc5d-427b-ac75-c5d67449e477)
+![image](https://github.com/user-attachments/assets/045022be-eb57-4f4c-9f79-e8cd4d9376ef)
 
 #### Carvilla Application
 ![carvilla_website](https://github.com/user-attachments/assets/5448b4dc-ad79-4631-b62f-5e2e45a29212)
