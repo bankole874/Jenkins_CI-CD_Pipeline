@@ -1,25 +1,82 @@
-# Jenkins_CI-CD_Pipeline
+# Jenkins CI/CD Pipeline with SonarQube, Docker, and GitHub Webhooks on AWS
 
-Jenkins is a popular open-source automation server that helps automate various tasks in the software development process, including building, testing, and deploying software. Github is a code repository that provides version control and collaboration tools, and Sonarqube is a code quality management tool that helps analyze and manage code quality in software projects. Docker is a containerization platform that helps simplify the deployment of software applications.
+## Introduction
 
-Using terraform to create 3 EC2 instances.
-First, we will create an AWS EC2 instance and install Jenkins on it. We will then set up a Github repository and integrate it with Jenkins. Next, we will configure Sonarqube to analyze code quality in our Github repository. Finally, we will create a Docker image of our application and deploy it using Jenkins.
+This project demonstrates how to set up a Continuous Integration/Continuous Deployment (CI/CD) pipeline using Jenkins, SonarQube, Docker, and GitHub Webhooks on AWS. The infrastructure is provisioned using Terraform, and the pipeline automates the process of building, testing, analyzing, and deploying a software application.
 
-Throughout the video, we will explain the importance of each step and provide detailed instructions on how to configure each tool to work together seamlessly. By the end of this video, you will have a working CI/CD pipeline that will help automate the software development process and ensure the quality of your code.
+## Project Components
 
-Whether you are a developer, software engineer, or DevOps professional, this video will provide you with valuable insights on how to set up a CI/CD pipeline using Jenkins, Github, Sonarqube, and Docker on an AWS EC2 instance. Join us in this exciting journey and learn how to streamline your software development process today!
+- **Jenkins**: An open-source automation server used for automating parts of the software development process, including building, testing, and deploying applications.
+- **GitHub**: A code hosting platform that provides version control and collaboration tools using Git.
+- **SonarQube**: A code quality management tool that analyzes code to detect bugs, vulnerabilities, and code smells.
+- **Docker**: A platform that enables developers to automate the deployment of applications inside lightweight, portable containers.
+- **Terraform**: An open-source infrastructure as code (IaC) software tool that provides a consistent CLI workflow to manage cloud services.
 
-Make sure to subscribe to our channel if this video helped you and you want to see more content like this. Don't forget to give this video a thumbs up if you found it helpful and hit the notification bell icon so you don't miss any updates from our channel. Thank you for watching!
+## Architecture
 
+![image](https://github.com/user-attachments/assets/2db7fc5e-b2e2-4f37-83b9-7849e29f12f5)
 
-![carvilla_website](https://github.com/user-attachments/assets/4dddee18-4004-4264-9db7-b542c19cd535)
-![sonarQube_carvilla](https://github.com/user-attachments/assets/4da96af1-20e5-49c6-8c44-3e2e1212581b)
-![security_group](https://github.com/user-attachments/assets/b2fe097e-88a0-44bf-b594-05a718d9be74)
-![carvilla_website](https://github.com/user-attachments/assets/5448b4dc-ad79-4631-b62f-5e2e45a29212)
+## Setup Instructions
+
+### Provision AWS Infrastructure with Terraform
+```
+terraform init
+terraform plan
+terraform apply
+ ```
 ![public_instances_with_terraform](https://github.com/user-attachments/assets/eaaa2b84-70a1-4348-a612-6d5b06574c83)
-![website_preview](https://github.com/user-attachments/assets/fa1259a6-d2e8-4c45-8260-dc0f6db45e36)
-![ssh_docker_jenkins_and_sonarqube](https://github.com/user-attachments/assets/9667e75a-fb64-414e-b047-948f9034e552)
+#### EC2 Dashboard
 ![deployed_instances](https://github.com/user-attachments/assets/fa272442-9de4-4551-9a7f-ec21e7d3f469)
+#### SSH Connection into Docker, Jenkins and SonarQube Instances
+![ssh_docker_jenkins_and_sonarqube](https://github.com/user-attachments/assets/9667e75a-fb64-414e-b047-948f9034e552)
+
+### Setup Jenkins
+
+#### Start Jenkins
+Run Jenkins and access it via the browser.
 ![jenkins](https://github.com/user-attachments/assets/fffff306-179f-4887-b110-296fd358fe9c)
+
+#### Install Necessary Plugins
+Install plugins for GitHub, Docker, and SonarQube integration.
+
+### Set Up GitHub Webhooks
+ 
+- Go to the repository settings.
+- Add a webhook pointing to your Jenkins server's `/github-webhook/` URL.
+- Create a Jenkins job that polls GitHub for changes and triggers the pipeline.
+
 ![jenkins_webhook](https://github.com/user-attachments/assets/d236d2c4-7282-4d01-a6e3-7afef0ba2e94)
-![jenkins_sonarqube](https://github.com/user-attachments/assets/a08dd40b-6ab8-4476-af63-dcf20510b52f)
+
+
+### Configure SonarQube
+
+Integrate SonarQube with Jenkins by configuring the Jenkins job to perform a SonarQube analysis after the code is built.
+
+![image](https://github.com/user-attachments/assets/cf771089-9634-4e24-9551-629fb617616e)
+
+### Docker Image Creation and Deployment
+
+- Write a Dockerfile: Create a Dockerfile for your application.
+- Build and Push Docker Image: Use Jenkins to build the Docker image and push it to a Docker registry.
+- Deploy the Docker Container: Run the Docker container on the third EC2 instance.
+
+#### Build and Deployment Successful
+![image](https://github.com/user-attachments/assets/441ea664-bc5d-427b-ac75-c5d67449e477)
+
+#### Carvilla Application
+![carvilla_website](https://github.com/user-attachments/assets/5448b4dc-ad79-4631-b62f-5e2e45a29212)
+
+## Usage
+
+- **Continuous Integration**: Whenever a commit is pushed to the GitHub repository, the Jenkins job will be triggered, automatically building the code, analyzing it with SonarQube, and creating a Docker image.
+- **Continuous Deployment**: Once the Docker image is created, it will be deployed automatically to the EC2 instance running Docker.
+
+## Troubleshooting
+
+- **Jenkins not triggering builds**: Check GitHub webhook configuration and ensure Jenkins is accessible from GitHub.
+- **SonarQube analysis failing**: Verify SonarQube is running and accessible, and check the Jenkins job configuration for any misconfigurations.
+- **Docker deployment issues**: Ensure the Docker daemon is running on the EC2 instance and that the image is correctly pushed to the Docker registry.
+
+## Conclusion
+
+This project provides a robust CI/CD pipeline setup on AWS, integrating Jenkins, SonarQube, Docker, and GitHub Webhooks. It automates the process of building, testing, analyzing, and deploying applications, ensuring a smooth and efficient software development lifecycle.
