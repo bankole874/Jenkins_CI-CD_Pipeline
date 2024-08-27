@@ -12,8 +12,14 @@ Whether you are a developer, software engineer, or DevOps professional, this vid
 Make sure to subscribe to our channel if this video helped you and you want to see more content like this. Don't forget to give this video a thumbs up if you found it helpful and hit the notification bell icon so you don't miss any updates from our channel. Thank you for watching!
 
 
-![public_instances_with_terraform](https://github.com/user-attachments/assets/83871c71-e5d9-4691-829a-f519da6647d2)
-![website_preview](https://github.com/user-attachments/assets/9d34cd3d-fd45-402d-bf61-636873a71f29)
-![ssh_docker_jenkins_and_sonarqube](https://github.com/user-attachments/assets/dd8bb8fb-9da9-48a0-bae5-1465e4271d76)
-![deployed_instances](https://github.com/user-attachments/assets/d878df5a-ba36-4d47-9a9c-5e9cb4ada370)
-![jenkins](https://github.com/user-attachments/assets/6e3b23d0-fed8-48ef-b844-8ad3fa954735)
+![carvilla_website](https://github.com/user-attachments/assets/4dddee18-4004-4264-9db7-b542c19cd535)
+![sonarQube_carvilla](https://github.com/user-attachments/assets/4da96af1-20e5-49c6-8c44-3e2e1212581b)
+![security_group](https://github.com/user-attachments/assets/b2fe097e-88a0-44bf-b594-05a718d9be74)
+![carvilla_website](https://github.com/user-attachments/assets/5448b4dc-ad79-4631-b62f-5e2e45a29212)
+![public_instances_with_terraform](https://github.com/user-attachments/assets/eaaa2b84-70a1-4348-a612-6d5b06574c83)
+![website_preview](https://github.com/user-attachments/assets/fa1259a6-d2e8-4c45-8260-dc0f6db45e36)
+![ssh_docker_jenkins_and_sonarqube](https://github.com/user-attachments/assets/9667e75a-fb64-414e-b047-948f9034e552)
+![deployed_instances](https://github.com/user-attachments/assets/fa272442-9de4-4551-9a7f-ec21e7d3f469)
+![jenkins](https://github.com/user-attachments/assets/fffff306-179f-4887-b110-296fd358fe9c)
+![jenkins_webhook](https://github.com/user-attachments/assets/d236d2c4-7282-4d01-a6e3-7afef0ba2e94)
+![jenkins_sonarqube](https://github.com/user-attachments/assets/a08dd40b-6ab8-4476-af63-dcf20510b52f)
