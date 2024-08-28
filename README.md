@@ -32,11 +32,11 @@ terraform apply
 
 ### 2. Setup Jenkins
 
-#### - Start Jenkins
+- #### Start Jenkins
 Run Jenkins and access it via the browser.
 ![jenkins](https://github.com/user-attachments/assets/fffff306-179f-4887-b110-296fd358fe9c)
 
-#### - Install Necessary Plugins
+- #### Install Necessary Plugins
 Install plugins for GitHub, Docker, and SonarQube integration.
 
 ### 3. Set Up GitHub Webhooks
