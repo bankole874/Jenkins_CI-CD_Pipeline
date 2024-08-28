@@ -25,9 +25,9 @@ terraform plan
 terraform apply
  ```
 ![public_instances_with_terraform](https://github.com/user-attachments/assets/eaaa2b84-70a1-4348-a612-6d5b06574c83)
-#### EC2 Dashboard
+- #### EC2 Dashboard
 ![deployed_instances](https://github.com/user-attachments/assets/fa272442-9de4-4551-9a7f-ec21e7d3f469)
-#### SSH Connection into Docker, Jenkins and SonarQube Instances
+- #### SSH Connection into Docker, Jenkins and SonarQube Instances
 ![ssh_docker_jenkins_and_sonarqube](https://github.com/user-attachments/assets/9667e75a-fb64-414e-b047-948f9034e552)
 
 ### Setup Jenkins
