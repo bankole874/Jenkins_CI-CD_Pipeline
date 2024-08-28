@@ -18,7 +18,7 @@ This project demonstrates how to set up a Continuous Integration/Continuous Depl
 
 ## Setup Instructions
 
-### Provision AWS Infrastructure with Terraform
+### 1. Provision AWS Infrastructure with Terraform
 ```
 terraform init
 terraform plan
@@ -30,7 +30,7 @@ terraform apply
 - #### SSH Connection into Docker, Jenkins and SonarQube Instances
 ![ssh_docker_jenkins_and_sonarqube](https://github.com/user-attachments/assets/9667e75a-fb64-414e-b047-948f9034e552)
 
-### Setup Jenkins
+### 2. Setup Jenkins
 
 #### Start Jenkins
 Run Jenkins and access it via the browser.
@@ -39,7 +39,7 @@ Run Jenkins and access it via the browser.
 #### Install Necessary Plugins
 Install plugins for GitHub, Docker, and SonarQube integration.
 
-### Set Up GitHub Webhooks
+### 3. Set Up GitHub Webhooks
  
 - Go to the repository settings.
 - Add a webhook pointing to your Jenkins server's `/github-webhook/` URL.
@@ -48,13 +48,13 @@ Install plugins for GitHub, Docker, and SonarQube integration.
 ![jenkins_webhook](https://github.com/user-attachments/assets/d236d2c4-7282-4d01-a6e3-7afef0ba2e94)
 
 
-### Configure SonarQube
+### 4. Configure SonarQube
 
 Integrate SonarQube with Jenkins by configuring the Jenkins job to perform a SonarQube analysis after the code is built.
 
 ![image](https://github.com/user-attachments/assets/cf771089-9634-4e24-9551-629fb617616e)
 
-### Docker Image Creation and Deployment
+### 5. Docker Image Creation and Deployment
 
 - Write a Dockerfile: Create a Dockerfile for your application.
 - Build and Push Docker Image: Use Jenkins to build the Docker image and push it to a Docker registry.
