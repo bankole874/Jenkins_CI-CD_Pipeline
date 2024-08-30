@@ -50,7 +50,7 @@ Install plugins for GitHub, Docker, and SonarQube integration.
 
 ### 4. Configure SonarQube
 
-Integrate SonarQube with Jenkins by configuring the Jenkins job to perform a SonarQube analysis after the code is built.
+- Integrate SonarQube with Jenkins by configuring the Jenkins job to perform a SonarQube analysis after the code is built.
 
 ![image](https://github.com/user-attachments/assets/cf771089-9634-4e24-9551-629fb617616e)
 
@@ -60,10 +60,10 @@ Integrate SonarQube with Jenkins by configuring the Jenkins job to perform a Son
 - Build and Push Docker Image: Use Jenkins to build the Docker image and push it to a Docker registry.
 - Deploy the Docker Container: Run the Docker container on the third EC2 instance.
 
-#### Build and Deployment Successful
+- #### Build and Deployment Successful
 ![image](https://github.com/user-attachments/assets/045022be-eb57-4f4c-9f79-e8cd4d9376ef)
 
-#### Carvilla Application
+- #### Carvilla Application
 ![carvilla_website](https://github.com/user-attachments/assets/5448b4dc-ad79-4631-b62f-5e2e45a29212)
 
 ## Usage
