@@ -14,13 +14,7 @@ This project demonstrates how to set up a Continuous Integration/Continuous Depl
 
 ## Architecture
 
-
-https://github.com/user-attachments/assets/5aaa7295-1820-47d3-bdfd-62e6de444b3c
-
-
-
-
-![image](https://github.com/user-attachments/assets/2db7fc5e-b2e2-4f37-83b9-7849e29f12f5)
+![Recording 2024-09-20 104148](https://github.com/user-attachments/assets/50a4efac-8ccf-4fbf-a168-d6e486f2043f)
 
 ## Setup Instructions
 
